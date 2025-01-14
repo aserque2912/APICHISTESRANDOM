@@ -8,10 +8,8 @@ import retrofit2.http.GET
 
 interface JokeApiService {
 
-
     @GET("random")
     suspend fun getRandomJoke(): Response<JokeResponse>
-
 
     companion object {
         private const val BASE_URL = "https://api.chucknorris.io/jokes/"
